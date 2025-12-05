@@ -1,0 +1,590 @@
+[
+  {
+    "id": 1,
+    "name": "Hotel Atlântico Copacabana",
+    "description": "Hotel luxuoso com vista panorâmica para a Praia de Copacabana, oferecendo conforto e serviços premium.",
+    "category": "Luxo",
+    "type": "Resort",
+    "chain": "Atlântico Hotels",
+    "country": "Brasil",
+    "city": "Rio de Janeiro",
+    "address": "Avenida Atlântica, 3450",
+    "zip_code": "22070-001",
+    "pricing": {
+      "base_price": 850,
+      "currency": "BRL",
+      "discount_percentage": 10,
+      "final_price": 765,
+      "tax_included": true,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.7,
+      "stars": 5,
+      "review_count": 2480
+    },
+    "availability": {
+      "available_rooms": 23,
+      "min_nights": 2,
+      "max_guests_per_room": 4,
+      "check_in_time": "14:00",
+      "check_out_time": "12:00"
+    },
+    "amenities": ["Piscina", "Academia", "Spa", "Wi-Fi", "Beira-mar", "Bar"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Deluxe Vista Mar", "beds": 1, "max_guests": 3, "price_multiplier": 1.6 }
+    ],
+    "media": {
+      "images": [
+        "https://example.com/atlantico1.jpg",
+        "https://example.com/atlantico2.jpg"
+      ]
+    },
+    "nearby_attractions": ["Praia de Copacabana", "Forte de Copacabana", "Pão de Açúcar"],
+    "policies": {
+      "cancellation": "Cancelamento gratuito até 48 horas antes",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças até 5 anos não pagam"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "es"],
+    "customer_support_24h": true,
+    "created_at": "2025-01-10T10:00:00Z",
+    "updated_at": "2025-12-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "name": "Resort Porto de Galinhas Beach",
+    "description": "Resort pé na areia com piscinas naturais ao redor e suítes com varanda para o mar.",
+    "category": "Resort",
+    "type": "All Inclusive",
+    "chain": "Tropical Resorts",
+    "country": "Brasil",
+    "city": "Porto de Galinhas",
+    "address": "Rodovia PE-009, Km 05",
+    "zip_code": "55590-000",
+    "pricing": {
+      "base_price": 720,
+      "currency": "BRL",
+      "discount_percentage": 5,
+      "final_price": 684,
+      "tax_included": true,
+      "refundable": false
+    },
+    "rating": {
+      "average": 4.6,
+      "stars": 5,
+      "review_count": 1820
+    },
+    "availability": {
+      "available_rooms": 12,
+      "min_nights": 3,
+      "max_guests_per_room": 5,
+      "check_in_time": "15:00",
+      "check_out_time": "11:00"
+    },
+    "amenities": ["Piscina Natural", "SPA", "Restaurante 24h", "Wi-Fi", "Kids Club"],
+    "room_types": [
+      { "type": "Suíte Família", "beds": 3, "max_guests": 5, "price_multiplier": 1.4 },
+      { "type": "Bangalô Vista Mar", "beds": 2, "max_guests": 4, "price_multiplier": 1.8 }
+    ],
+    "media": {
+      "images": [
+        "https://example.com/pg1.jpg",
+        "https://example.com/pg2.jpg"
+      ]
+    },
+    "nearby_attractions": ["Piscinas Naturais", "Praia de Muro Alto", "Pontal do Cupe"],
+    "policies": {
+      "cancellation": "Não reembolsável",
+      "smoking": false,
+      "pets_allowed": true,
+      "child_policy": "Crianças de qualquer idade são bem-vindas"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": false,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en"],
+    "customer_support_24h": true,
+    "created_at": "2025-02-01T11:00:00Z",
+    "updated_at": "2025-11-25T12:00:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Ilha Bela Ocean View Hotel",
+    "description": "Hotel charmoso ideal para descanso com vista para o canal de São Sebastião e trilhas próximas.",
+    "category": "Boutique",
+    "type": "Hotel",
+    "chain": "Ocean View Group",
+    "country": "Brasil",
+    "city": "Ilhabela",
+    "address": "Avenida Força Expedicionária Brasileira, 1200",
+    "zip_code": "11630-000",
+    "pricing": {
+      "base_price": 540,
+      "currency": "BRL",
+      "discount_percentage": 15,
+      "final_price": 459,
+      "tax_included": false,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.4,
+      "stars": 4,
+      "review_count": 950
+    },
+    "availability": {
+      "available_rooms": 8,
+      "min_nights": 2,
+      "max_guests_per_room": 3,
+      "check_in_time": "14:00",
+      "check_out_time": "11:00"
+    },
+    "amenities": ["Piscina", "Wi-Fi", "Vista para o Mar", "Bar"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Varanda Superior", "beds": 1, "max_guests": 3, "price_multiplier": 1.5 }
+    ],
+    "media": {
+      "images": [
+        "https://example.com/ilha1.jpg",
+        "https://example.com/ilha2.jpg"
+      ]
+    },
+    "nearby_attractions": ["Praia do Curral", "Cachoeira da Toca", "Trilhas da Ilha"],
+    "policies": {
+      "cancellation": "Cancelamento gratuito até 7 dias antes",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças acima de 10 anos"
+    },
+    "services": {
+      "airport_shuttle": false,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "fr"],
+    "customer_support_24h": false,
+    "created_at": "2025-01-20T09:00:00Z",
+    "updated_at": "2025-12-01T09:00:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Salvador Farol da Barra Hotel",
+    "description": "Hotel localizado em frente ao Farol da Barra com quartos modernos e restaurante com vista para o mar.",
+    "category": "Executivo",
+    "type": "Hotel",
+    "chain": "Bahia Hospitality",
+    "country": "Brasil",
+    "city": "Salvador",
+    "address": "Avenida Oceânica, 1500",
+    "zip_code": "40140-130",
+    "pricing": {
+      "base_price": 480,
+      "currency": "BRL",
+      "discount_percentage": 0,
+      "final_price": 480,
+      "tax_included": true,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.2,
+      "stars": 4,
+      "review_count": 1120
+    },
+    "availability": {
+      "available_rooms": 30,
+      "min_nights": 1,
+      "max_guests_per_room": 3,
+      "check_in_time": "13:00",
+      "check_out_time": "12:00"
+    },
+    "amenities": ["Restaurante", "Beira-mar", "Wi-Fi", "Piscina", "Bar"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Vista Mar", "beds": 1, "max_guests": 3, "price_multiplier": 1.3 }
+    ],
+    "media": {
+      "images": [
+        "https://example.com/barra1.jpg",
+        "https://example.com/barra2.jpg"
+      ]
+    },
+    "nearby_attractions": ["Farol da Barra", "Praia do Porto da Barra", "Pelourinho"],
+    "policies": {
+      "cancellation": "Cancelamento gratuito até 24 horas antes",
+      "smoking": false,
+      "pets_allowed": true,
+      "child_policy": "Crianças até 8 anos grátis"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": false,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "es"],
+    "customer_support_24h": true,
+    "created_at": "2025-03-01T10:00:00Z",
+    "updated_at": "2025-11-30T12:30:00Z"
+  },
+  {
+    "id": 5,
+    "name": "Florianópolis Jurerê Beach Hotel",
+    "description": "Hotel sofisticado em Jurerê Internacional com acesso direto à praia e serviços exclusivos.",
+    "category": "Luxo",
+    "type": "Resort",
+    "chain": "Premium Beach Hotels",
+    "country": "Brasil",
+    "city": "Florianópolis",
+    "address": "Avenida dos Búzios, 2000",
+    "zip_code": "88053-301",
+    "pricing": {
+      "base_price": 920,
+      "currency": "BRL",
+      "discount_percentage": 12,
+      "final_price": 809.6,
+      "tax_included": true,
+      "refundable": false
+    },
+    "rating": {
+      "average": 4.8,
+      "stars": 5,
+      "review_count": 1950
+    },
+    "availability": {
+      "available_rooms": 18,
+      "min_nights": 2,
+      "max_guests_per_room": 4,
+      "check_in_time": "15:00",
+      "check_out_time": "12:00"
+    },
+    "amenities": ["Piscina", "Spa", "Acesso à Praia", "Wi-Fi", "Academia"],
+    "room_types": [
+      { "type": "Suíte Luxo", "beds": 1, "max_guests": 3, "price_multiplier": 1.5 },
+      { "type": "Suíte Família", "beds": 2, "max_guests": 4, "price_multiplier": 1.8 }
+    ],
+    "media": {
+      "images": [
+        "https://example.com/jurere1.jpg",
+        "https://example.com/jurere2.jpg"
+      ]
+    },
+    "nearby_attractions": ["Praia de Jurerê", "Beach Clubs", "Fortaleza de São José da Ponta Grossa"],
+    "policies": {
+      "cancellation": "Não reembolsável",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças de qualquer idade permitidas"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "de", "es"],
+    "customer_support_24h": true,
+    "created_at": "2025-01-15T10:30:00Z",
+    "updated_at": "2025-12-01T11:30:00Z"
+  },
+  {
+    "id": 6,
+    "name": "Praia dos Carneiros Paradise Resort",
+    "description": "Resort pé na areia com águas cristalinas, ideal para família e casais que buscam tranquilidade.",
+    "category": "Resort",
+    "type": "All Inclusive",
+    "chain": "Carneiros Hospitality",
+    "country": "Brasil",
+    "city": "Tamandaré",
+    "address": "Estrada Praia dos Carneiros, Km 02",
+    "zip_code": "55578-000",
+    "pricing": {
+      "base_price": 780,
+      "currency": "BRL",
+      "discount_percentage": 8,
+      "final_price": 717.6,
+      "tax_included": true,
+      "refundable": false
+    },
+    "rating": {
+      "average": 4.7,
+      "stars": 5,
+      "review_count": 1300
+    },
+    "availability": {
+      "available_rooms": 16,
+      "min_nights": 2,
+      "max_guests_per_room": 4,
+      "check_in_time": "14:00",
+      "check_out_time": "12:00"
+    },
+    "amenities": ["Piscina", "Spa", "Bar Molhado", "Beira-mar", "Wi-Fi"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Bangalô Praia", "beds": 2, "max_guests": 4, "price_multiplier": 1.7 }
+    ],
+    "media": {
+      "images": ["https://example.com/carneiros1.jpg", "https://example.com/carneiros2.jpg"]
+    },
+    "nearby_attractions": ["Igreja São Benedito", "Praia dos Carneiros", "Passeios de Catamarã"],
+    "policies": {
+      "cancellation": "Não reembolsável",
+      "smoking": false,
+      "pets_allowed": true,
+      "child_policy": "Crianças de qualquer idade permitidas"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": false,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en"],
+    "customer_support_24h": true,
+    "created_at": "2025-02-15T10:00:00Z",
+    "updated_at": "2025-12-01T13:00:00Z"
+  },
+  {
+    "id": 7,
+    "name": "Natal Ponta Negra Beach Hotel",
+    "description": "Hotel moderno com vista para o Morro do Careca, próximo aos melhores restaurantes e quiosques.",
+    "category": "Executivo",
+    "type": "Hotel",
+    "chain": "Nordeste Hotels",
+    "country": "Brasil",
+    "city": "Natal",
+    "address": "Rua Erivan França, 150",
+    "zip_code": "59090-100",
+    "pricing": {
+      "base_price": 430,
+      "currency": "BRL",
+      "discount_percentage": 5,
+      "final_price": 408.5,
+      "tax_included": true,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.3,
+      "stars": 4,
+      "review_count": 980
+    },
+    "availability": {
+      "available_rooms": 22,
+      "min_nights": 1,
+      "max_guests_per_room": 3,
+      "check_in_time": "13:00",
+      "check_out_time": "11:00"
+    },
+    "amenities": ["Piscina", "Wi-Fi", "Academia", "Restaurante"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Vista para o Morro", "beds": 1, "max_guests": 3, "price_multiplier": 1.3 }
+    ],
+    "media": {
+      "images": ["https://example.com/natal1.jpg", "https://example.com/natal2.jpg"]
+    },
+    "nearby_attractions": ["Morro do Careca", "Praia de Ponta Negra", "Feirinha de Artesanato"],
+    "policies": {
+      "cancellation": "Cancelamento até 24h antes",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças até 7 anos grátis"
+    },
+    "services": {
+      "airport_shuttle": false,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "es"],
+    "customer_support_24h": false,
+    "created_at": "2025-01-30T09:00:00Z",
+    "updated_at": "2025-11-29T08:00:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Armação dos Búzios Sunset Resort",
+    "description": "Resort elegante com bangalôs e vista privilegiada do pôr do sol da Orla Bardot.",
+    "category": "Luxo",
+    "type": "Resort",
+    "chain": "Sunset Hotels",
+    "country": "Brasil",
+    "city": "Armação dos Búzios",
+    "address": "Orla Bardot, 900",
+    "zip_code": "28950-000",
+    "pricing": {
+      "base_price": 995,
+      "currency": "BRL",
+      "discount_percentage": 10,
+      "final_price": 895.5,
+      "tax_included": true,
+      "refundable": false
+    },
+    "rating": {
+      "average": 4.9,
+      "stars": 5,
+      "review_count": 2150
+    },
+    "availability": {
+      "available_rooms": 10,
+      "min_nights": 3,
+      "max_guests_per_room": 4,
+      "check_in_time": "15:00",
+      "check_out_time": "11:00"
+    },
+    "amenities": ["Piscina", "Spa", "Bar", "Restaurante Gourmet", "Vista para o Mar"],
+    "room_types": [
+      { "type": "Suíte Luxo", "beds": 1, "max_guests": 3, "price_multiplier": 1.5 },
+      { "type": "Bangalô Premium", "beds": 2, "max_guests": 4, "price_multiplier": 2 }
+    ],
+    "media": {
+      "images": ["https://example.com/buzios1.jpg", "https://example.com/buzios2.jpg"]
+    },
+    "nearby_attractions": ["Praia de João Fernandes", "Rua das Pedras", "Orla Bardot"],
+    "policies": {
+      "cancellation": "Não reembolsável",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças acima de 8 anos"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "fr", "es"],
+    "customer_support_24h": true,
+    "created_at": "2025-03-05T12:00:00Z",
+    "updated_at": "2025-12-02T10:00:00Z"
+  },
+  {
+    "id": 9,
+    "name": "Praia do Forte Eco Resort",
+    "description": "Resort sustentável com piscinas naturais e integração à natureza, ideal para famílias.",
+    "category": "Resort",
+    "type": "Eco Resort",
+    "chain": "GreenLife Hotels",
+    "country": "Brasil",
+    "city": "Praia do Forte",
+    "address": "Avenida do Farol, 5000",
+    "zip_code": "48280-000",
+    "pricing": {
+      "base_price": 860,
+      "currency": "BRL",
+      "discount_percentage": 12,
+      "final_price": 756.8,
+      "tax_included": true,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.8,
+      "stars": 5,
+      "review_count": 1670
+    },
+    "availability": {
+      "available_rooms": 20,
+      "min_nights": 2,
+      "max_guests_per_room": 5,
+      "check_in_time": "14:00",
+      "check_out_time": "11:00"
+    },
+    "amenities": ["Piscinas Naturais", "Spa", "Acesso à Praia", "Wi-Fi", "Kids Club"],
+    "room_types": [
+      { "type": "Suíte Família", "beds": 2, "max_guests": 5, "price_multiplier": 1.4 },
+      { "type": "Eco Luxo", "beds": 1, "max_guests": 3, "price_multiplier": 1.7 }
+    ],
+    "media": {
+      "images": ["https://example.com/forte1.jpg", "https://example.com/forte2.jpg"]
+    },
+    "nearby_attractions": ["Projeto Tamar", "Castelo Garcia D'Ávila", "Vilas da Praia do Forte"],
+    "policies": {
+      "cancellation": "Cancelamento até 48h antes",
+      "smoking": false,
+      "pets_allowed": true,
+      "child_policy": "Todas as idades permitidas"
+    },
+    "services": {
+      "airport_shuttle": true,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "de", "es"],
+    "customer_support_24h": true,
+    "created_at": "2025-02-20T09:30:00Z",
+    "updated_at": "2025-12-02T09:00:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Maragogi Blue Coast Hotel",
+    "description": "Hotel com vista para o mar de Maragogi, próximo às Galés e com suítes perfeitas para relaxamento.",
+    "category": "Boutique",
+    "type": "Hotel",
+    "chain": "Blue Coast Group",
+    "country": "Brasil",
+    "city": "Maragogi",
+    "address": "Avenida Senador Rui Palmeira, 200",
+    "zip_code": "57955-000",
+    "pricing": {
+      "base_price": 650,
+      "currency": "BRL",
+      "discount_percentage": 10,
+      "final_price": 585,
+      "tax_included": false,
+      "refundable": true
+    },
+    "rating": {
+      "average": 4.5,
+      "stars": 4,
+      "review_count": 1250
+    },
+    "availability": {
+      "available_rooms": 14,
+      "min_nights": 2,
+      "max_guests_per_room": 3,
+      "check_in_time": "14:00",
+      "check_out_time": "12:00"
+    },
+    "amenities": ["Piscina", "Acesso à Praia", "Wi-Fi", "Restaurante"],
+    "room_types": [
+      { "type": "Standard", "beds": 1, "max_guests": 2, "price_multiplier": 1 },
+      { "type": "Vista Mar Superior", "beds": 1, "max_guests": 3, "price_multiplier": 1.5 }
+    ],
+    "media": {
+      "images": ["https://example.com/maragogi1.jpg", "https://example.com/maragogi2.jpg"]
+    },
+    "nearby_attractions": ["Galés de Maragogi", "Praia de Antunes", "Praia de Barra Grande"],
+    "policies": {
+      "cancellation": "Cancelamento até 72h antes",
+      "smoking": false,
+      "pets_allowed": false,
+      "child_policy": "Crianças acima de 5 anos"
+    },
+    "services": {
+      "airport_shuttle": false,
+      "breakfast_included": true,
+      "laundry_service": true,
+      "room_cleaning_daily": true
+    },
+    "supported_languages": ["pt", "en", "es"],
+    "customer_support_24h": false,
+    "created_at": "2025-03-10T10:00:00Z",
+    "updated_at": "2025-12-02T07:45:00Z"
+  }
+
+
+
+]
