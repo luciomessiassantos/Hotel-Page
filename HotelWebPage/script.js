@@ -1,15 +1,17 @@
-import getLocalJsonData from "./data-fetch.js";
+import getLocalJsonData from "./data-fetch.mjs";
 
 const main = document.getElementById("main-page");
 const hero = document.getElementById("hero");
 const header = document.getElementById("header");
+const list = document.getElementById("hotels-list")
+const searchValue = document.getElementById("");
 const allHotelsSearch = document.getElementById("all-hotels-page");
 if (!header) {
     throw new Error("Header is null! There's no element with id 'header', create one!")
 }
 
 const section2 = document.getElementById("second-section");
-if (!section2) {
+if (!section2 || !list) {
     throw new Error("No second section found: there's no element with id = 'second-section', create one!!")
 }
 
@@ -85,11 +87,12 @@ function commentsScroll(index) {
 
 setInterval(() => {
 
-    if (index > cards.length ) {
+    if (index > cards.length - 1 ) {
         index = 0;
     }
+
     commentsScroll(index);
-    index++;
+    index++;    
 
 }, 3000)
 
@@ -99,9 +102,9 @@ const observer = new IntersectionObserver(
     (e) => {
         e.forEach((entry) => {
             if (entry.isIntersecting) {
-                header.classList.add("bg-blue-700");
+                header.style.backgroundColor = "hsl(224deg, 76%, 48%)"; 
             } else {
-                header.classList.remove("bg-blue-700");
+                header.style.backgroundColor = "";          
             }
         })
     },
@@ -131,28 +134,82 @@ const images_offers = [
     "./assets/offers/pexels-pixabay-164595_full.webp"
 ]
 
+
+
+
 const data = await getLocalJsonData();
 
-for (let index = 0; index < images_offers.length; index++) {
+if (!data) {
+    throw new Error();
+}
+
+for (let index = 0; index < data.length; index++) {
+
 
     offers.innerHTML += `
-                    <article class="min-w-1/3 h-5/6 m-6 bg-[url(${images_offers[index]})] bg-cover bg-center rounded-2xl snap-center relative 
-                after:content-normal after:rounded-2xl after:absolute after:w-full after:h-full after:top-0 after:bg-gradient-to-t after:from-black/85 after:to-black/5 after:inset-0
-                transition-all duration-300 after:transition-all after:duration-300 after:opacity-70  hover:after:opacity-100 
-                    flex flex-col justify-between px-4 py-4">
-                    <div class="w-full h-1/5 ">
-                        <div class="bg-slate-600 w-1/5 h-5/6 text-lg font-semibold text-white rounded-full flex items-center justify-evenly">
-                            ⭐ 
-                            <h2>${data[index].rating.average}</h2>
-                        </div>
+            <article class="offer-card-hotel" style="background-image: url(${images_offers[index]});">
+                <div class="offer-rating-wrapper">
+                    <div class="offer-rating-badge">
+                        ⭐
+                        <h2>${data[index].rating.average}</h2>
                     </div>
-                <div class=" flex justify-between items-center px-5 font-medium text-2xl text-slate-50 w-full z-1 ">
-                    <h1>Hotel ${index + 1}</h1>
-                    <button class="bg-blue-900 p-2 px-5 rounded-3xl text-lg">Visualizar</button>
+                </div>
+
+                <div class="offer-footer">
+                    <h1>Hotel ${data[index].id}</h1>
+                    <button id="details-btn" class="offer-view-button" data-id="${data[index].id}" >Visualizar</button>
+                </div>
+            </article>
+
+    `
+
+    list.innerHTML += `
+                        <div class="hotel-card">
+                    <button class="favorite-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+
+                    <img src="${images_offers[index]}" alt="">
+
+                    <div class="hotel-card-info">
+                        <h1>${data[index].name}</h1>
+                        <div class="location">
+                                <i class="fa fa-map-pin" aria-hidden="true"></i>
+                                <div>${data[index].city}</div>
+                                <div>${data[index].country}</div>
+                        </div>
+                        <div class="hotel-rating">⭐ 4.7</div>
+                    </div>
+                    <div class="hotel-card-middle">
+                            
+                    </div>
+
+                    <div class="hotel-card-extra">
+                            <button class="details-button">
+                                Detalhes
+                            </button>
+                    </div>
                 </div>
     `
 
 }
+
+
+
+
+const detailsBtns = document.querySelectorAll(".offer-view-button");
+
+detailsBtns.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        const id = e.target.dataset.id;
+        
+        generateDetails();
+
+        console.log("teste");
+        
+    });
+});
+
 
 
 
@@ -162,7 +219,11 @@ const booking_button = document.getElementById("book-now-button");
 
 booking_button.addEventListener('click', () => {
     main.scrollTo({top: hero.offsetHeight, behavior:'smooth' })
+
+    console.log("Test");
 })
+
+
 
 const hotel_offers_images = document.querySelectorAll("div#offers-hotel-images")
 
@@ -171,17 +232,27 @@ for (let i = 0; i < hotel_offers_images.length; i++) {
     hotel_offers_images[i]
 }
 
-/**
- * @param {number} id
- */
-
-function onClickV(id) {
-    console.log(id);
-}
 
 
-const initAllHotels = () => {
-    
+
+
+function generateDetails() {
+    const div = document.createElement("div");
+    div.className = "details";
+    div.addEventListener('click', () => {
+        div.remove();
+    });
+    const details = document.createElement("div");
+
+    details.className = "details-pop";
+    details.innerHTML = `
+            
+        `;
+    div.appendChild(details);
+
+
+
+    main.appendChild(div);
 }
 
 

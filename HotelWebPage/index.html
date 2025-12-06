@@ -10,146 +10,100 @@
 </head>
 <body>
 
-    <main id="main-page" class="h-screen w-full overflow-y-scroll scroll-smooth snap-y snap-mandatory overscroll-none font-poppins ">
+<main id="main-page" class="main-page">
 
-            <header id="header" class="z-10 w-full h-fit p-4 px-10 flex justify-between fixed transition-colors duration-300">
-                <h1 class="text-slate-50 font-semibold text-xl">
-                    Hotel
-                </h1>
-                <div class="h-full w-1/5 flex justify-evenly items-center ">
-                    <h1 class="text-slate-50 cursor-pointer hover:underline hover:decoration-slate-50">
-                        Sobre Nós
+    <header id="header" class="header">
+        <h1 class="logo">Hotel</h1>
+
+        <div class="header-actions">
+            <h1 class="about">Sobre Nós</h1>
+            <button id="login-button" class="header-btn">Entrar</button>
+        </div>
+    </header>
+
+    <div id="hero" class="hero">
+        <img id="hero-img" class="hero-img" 
+             src="assets/hero/pexels-asman-chema-91897-594077_full.webp" 
+             loading="lazy" alt="">
+
+        <div class="hero-content">
+            <div class="hero-inner">
+
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        O destino ideal para quem busca conforto e exclusividade.
                     </h1>
-                    <button class="text-slate-50 border-2 border-slate-50 rounded-2xl px-5 text-center font-medium py-1 flex items-center justify-center cursor-pointer hover:bg-slate-50 hover:text-black transition-colors duration-150">
-                        Entrar
-                    </button>
                 </div>
-            </header>
 
-        <div id="hero" class="w-full h-full
-        bg-cover bg-center hero flex flex-col justify-center
-        relative snap-start
-        after:content-normal after:z-5 after:backdrop-blur-sm after:absolute after:w-full after:h-full after:bg-gradient-to-t after:from-black/80 after:to-black/5 after:inset-0 after:top-0
-        ">
-        <img id="hero-img" class="
-        w-full h-full absolute top-0 z-1 
-        " src="assets/hero/pexels-asman-chema-91897-594077_full.webp"
-        loading="lazy"
-        
-        alt="">
+                <div class="hero-right">
+                    <div id="comments" class="comments comments-carousel">
 
-            <div class="w-full h-full relative flex justify-center z-10">
-                <div class="w-full h-full flex justify-center items-end">
-                    <div class="w-2/4 h-full flex justify-center items-center ">
-                        <h1 class="font-bold w-1/2 text-center h-fit text-5xl text-slate-50">
-                            O destino ideal para quem busca conforto e exclusividade.
-                        </h1>
+                        <div class="comment-card">
+                            <h4>⭐⭐⭐⭐⭐</h4>
+                            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do</h1>
+                        </div>
+
+                        <div class="comment-card">
+                            <h4>⭐⭐⭐⭐⭐</h4>
+                            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do</h1>
+                        </div>
+
+                        <div class="comment-card">
+                            <h4>⭐⭐⭐⭐⭐</h4>
+                            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do</h1>
+                        </div>
+
+                        <div class="comment-card">
+                            <h4>⭐⭐⭐⭐</h4>
+                            <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do</h1>
+                        </div>
+
                     </div>
-                    <div class="w-2/4 h-full my-2 justify-center items-start flex flex-col font-medium text-2xl text-slate-50">
-                        <div id="comments" class="cards overflow-x-auto flex opacity-80 rounded-l-xl bg-gradient-to-r from-slate-800 to-slate-500/0 w-1/2 h-1/4 cards snap-x snap-mandatory ">
-                            <div class=" flex-none w-full h-full snap-start justify-center items-center p-5 ">
-                                <h4 class="font-light text-xs">
-                                      ⭐⭐⭐⭐⭐
-                                </h4>
-                                <h1 class="font-semibold text-lg w-full">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do
-                                </h1>
-                            </div>
-                            <div class="flex-none w-full h-full snap-start justify-center items-center p-5 ">
-                                <h4 class="font-light text-xs">
-                                      ⭐⭐⭐⭐⭐
-                                </h4>
-                                <h1 class="font-semibold text-lg w-full">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do
-                                </h1>
-                            </div>
-                            <div class="flex-none w-full h-full snap-start justify-center items-center p-5 ">
-                                <h4 class="font-light text-xs">
-                                      ⭐⭐⭐⭐⭐
-                                </h4>
-                                <h1 class="font-semibold text-lg w-full">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do
-                                </h1>
-                            </div>
-                            <div class="flex-none w-full h-full snap-start justify-center items-center p-5 ">
-                                <h4 class="font-light text-xs">
-                                      ⭐⭐⭐⭐
-                                </h4>
-                                <h1 class="font-semibold text-lg w-full">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam do
-                                </h1>
-                            </div>
-                        </div>
-                        <div class="w-1/2 h-fit flex justify-center">
-                            <button id="book-now-button" class="bg-blue-900 my-6 w-fit h-fit text-lg cursor-pointer px-8 py-2  rounded-3xl">
-                                Reservar agora
-                            </button>
-                        </div>
+
+                    <div class="book-now-wrapper">
+                        <button id="book-now-button" class="book-now-button">Reservar agora</button>
                     </div>
                 </div>
+
             </div>
-
         </div>
 
+    </div>
 
-        <div id="second-section" class="w-full h-full relative snap-start overflow-y-scroll snap-y snap-mandatory">
-            <header class="w-full h-1/4 flex items-end px-10 py-9 text-xl">
-                <h1>Most Popular</h1>
-            </header>
-            <section id="offers"  class=" cards w-full overflow-x-auto h-1/2 bg-slate-200 flex items-center space-x-10 snap-x snap-mandatory">
-            </section> 
+    <div id="second-section" class="second-section">
 
+        <header class="section-title">
+            <h1>Most Popular</h1>
+        </header>   
 
+        <section id="offers" class="offers offers-list">
+            
+        </section>
 
-            <section id="all-hotels-page" class="w-full h-18/20 grid grid-cols-7 grid-rows-10 ">
-                <header class="col-span-6 row-span-2 col-start-2 row-start-1 h-full flex items-center justify-center relative">
-                    <div class="w-5/6 h-1/3 rounded-full border border-slate-500 flex items-center justify-evenly">
-                        <i class="fas fa-magnifying-glass text-slate-500"></i>
-                        <input class="focus:outline-none w-11/12 font-light text-sm placeholder:font-medium" placeholder="Search your next vacation..." type="text">
-                        <i class="fas fa-xmark text-slate-500"></i>
+        <section id="all-hotels-page" class="all-hotels-page">
 
-                        <div class=" hidden absolute w-5/6 top-4/6 z-10  h-fit min-h-50 bg-white rounded-xl shadow-2xl">
+            <header class="search-wrapper">
+                <div class="search-bar">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search your next vacation..." />
+                    <i class="fas fa-xmark"></i>
 
-                        </div>
-                    </div>
-                </header>
-                <aside class="row-span-10 col-start-1 row-start-1">
-
-                </aside>
-                <main class="col-span-6 row-span-8 col-start-2 row-start-3
-                bg-slate-100 flex flex-col overflow-y-auto scroll-smooth p-5 shadow-inner">
-
-                <div class="w-full h-6/10 flex bg-white shadow-md rounded-xl p-5 relative">
-                    <button class="absolute bg-blue-900 text-white text-xl w-10 h-10 rounded-full m-2 flex items-center justify-center "><i class="far fa-heart f-2x"></i></button>
-                    <img class="w-3/12 h-full object-cover rounded-lg" src="assets/webp/full/bar-6878056_full.webp" alt="">
-                    <div class="h-full w-5/12 flex flex-col px-8 py-4">
-                        <h1 class="text-xl font-semibold" >Hotel Name</h1>
-                        <p class="text-xs">Description Lorem ipsum dolor sit amet consecte
-                            tur adipisicing elit. Animi, facilis minus alias itaque quibusdam numquam voluptatem esse incidunt molestias tempore expedita adipisci optio 
-                            perferendis voluptates quos voluptate commodi consectetur accusamus.
-                        </p>
-                        <div class="flex h-fit w-fit mt-7">
-                            <div class=" font-semibold text-xl bg-blue-950 text-white px-6 py-2 rounded-r-lg rounded-tl-lg " >
-                                4.7
-                            </div>
-                            <h2 class="h-full flex items-end font-medium px-1">
-                                /5
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="h-full w-4/12 " >
-
-                    </div>
+                    <div class="search-results"></div>
                 </div>
+            </header>
 
-                </main>
-            </section>
+            <main class="hotels-list" id="hotels-list">
+            </main>
 
+        </section>
+    </div>
 
-    </main>
+</main>
+
 
     <script type="module" src="script.js"></script>
-    <script src="data-fetch.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="data-fetch.mjs"></script>
 
 </body>
 </html>

@@ -5,7 +5,7 @@
 
 const getLocalJsonData = async () => {
     try {
-        const response = await fetch("data/hotels.json");
+        const response = await fetch("./data/hotels.json");
         if (!response.ok) {
             throw new Error("Fetch local data error: " + response.status);
         }
